@@ -1,0 +1,11 @@
+(library
+ (name m)
+ (public_name foo-link.plugin)
+ (modules m)
+ (libraries cohttp-lwt-unix))
+
+(executable
+ (name g)
+ (public_name g)
+ (modules g)
+ (libraries findlib.dynload))
